@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+
+int add(int n)
+{
+    int sum=0;
+    int i=0;
+    while(i<=n)
+    {
+        sum=sum+i;
+        i++;
+    }
+    return sum;
+};
+int main()
+{
+    //ankyy(345);
+    int n;
+    cout<<"Enter a number\n";
+    cin>>n;
+    cout<<"sum of "<<n<<"is"<<add(n);
+    return 0;
+}
