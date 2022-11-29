@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int ankyy(int i)
+{
+    int sum=0;
+    int r;
+    while(i>0)
+    {
+        r=i%10;
+        sum=sum+r;
+        i=i/10;
+    }
+    return sum;
+};
+
+
+int main()
+{
+    //ankyy(345);
+    cout<<ankyy(2564);
+    return 0;
+}
